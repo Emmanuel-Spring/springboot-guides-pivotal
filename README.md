@@ -1,2 +1,1 @@
-# springboot_webapp_02
-Repasando lo aprendido
+<h1>Spring Quickstart Guide</h1>
