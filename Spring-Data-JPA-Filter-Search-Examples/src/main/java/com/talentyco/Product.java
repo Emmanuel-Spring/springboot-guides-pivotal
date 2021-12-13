@@ -1,11 +1,33 @@
 package com.talentyco;
-/**Java Title
- * @author Emmanuel Nieto Muñoz
- * @version: xx/10/2021/1.0
- * @see <a href = "" />  </a>
- */
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Entity
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+
+    private String  name;
+    private String  brand;
+    private String  madein;
+    private float price;
+
+
+
 
 
 }
